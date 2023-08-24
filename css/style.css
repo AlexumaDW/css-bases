@@ -1,0 +1,120 @@
+/* Comentario en CSS
+Regla CSS consta de 2 partes
+1) El selector
+2) Bloque de declaraciones:{
+atributo: valor;
+atributo-de-mas-de-2-palabras: valor-de-mas-de-2-palabras;
+} */
+
+
+/* Importando otra hoja de estilos css ES UNA MALA PRACTICA:
+porque detiene la carga es bloqueante
+*/
+@import url("./otra-hoja.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  background-color: skyblue;
+  color: orangered;
+}
+
+/*************************************Selectores CSS*************************************/
+
+/* Selectores básicos 
+1) etiquetas
+2) identificador - atributo id #
+3) clases - atributo class .
+*/
+
+p {
+  color: midnightblue;
+}
+
+/* Dar estilos con ID se considera mala practica */
+#parrafo-dos {
+  background-color: skyblue;
+}
+
+/* Dar estilos con clases nos permite reutilizar nuestro código CSS */
+
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+/***********************************Selectores Avanzados*********************************/
+
+.hijos-directos>li {
+  background-color: thistle;
+}
+
+.hijos-descendientes b {
+  background-color: thistle;
+}
+
+/* El selector de hermanos-general solo aplican a los elementos inferiores y que sean hermanos */
+.hermanos-general~li {
+  background-color: thistle;
+}
+
+/* El selector de hermanos-adyacente solo aplica al elemento inferior y que sea hermano */
+.hermanos-adyacentes+li {
+  background-color: thistle;
+}
+
+/* Selectores de atributos */
+
+.selectores-atributos a[href] {
+  color: orangered;
+
+}
+
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+}
+
+
+/*El comodín del * aplica el estilo si contine el texto en cuestión */
+.selectores-atributos a[href*="jonmircha"] {
+  font-size: 24px;
+}
+
+/* El comodín del ^ aplica el estilo si empieza con el texto en cuestión */
+.selectores-atributos a[href^="https:"] {
+  text-decoration: none;
+}
+
+/* El comodín del $ aplica el estilo si termina con el texto en cuestión */
+.selectores-atributos a[href$=".com"] {
+  background-color: black;
+}
+
+/* El comodín del ~ aplica el estilo si contiene la clase en cuestión */
+.selectores-atributos a[class~="cursos"] {
+  background-color: midnightblue;
+}
+
+/* El comodín del | aplica el estilo si contiene la clase en cuestión seguido de un -*/
+.selectores-atributos a[class|="menu"] {
+  font-style: italic;
+}
+
+/* https: //youtu.be/K3xmRF8ab1o?si=bHCbdM9M5UmFB28P&t=7200 */
