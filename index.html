@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aprendiendo CSS</title>
+  <link rel="stylesheet" href="./css/normalize.css">
   <!-- Mi URL canonica la pagina principal de todo mi contenido -->
   <link rel="canonical" href="https://tudominio.com/la-url-canonica">
   <!-- Agregar un favicon de buena calidad png para la web y para el icon en moviles -->
@@ -30,7 +31,14 @@
     <ul>
       <li><a href="index.html#selectores-basicos">Selectores Básicos</a></li>
       <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
-      <li><a href="index.html"></a></li>
+      <li><a href="index.html#pseudoclases">Pseudoclases</a></li>
+      <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+      <li><a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
+      <li><a href="index.html#algoritmo-css">El Algoritmo de CSS</a></li>
+      <li><a href="index.html#reseteonormalizacion-css">Reseteo y Normalización de Estilos</a></li>
+      <li><a href="index.html#prefijo-navegadores">Prefijos de los Navegadores</a></li>
+      <li><a href="./box-model.html">El Modelo de Caja</a></li>
+      <li><a href="index.html#"></a></li>
     </ul>
   </article>
   <hr>
@@ -55,7 +63,8 @@
     <p class="text-32 bg-steelblue text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo temporibus
       quas harum pariatur quasi, eum quia a, velit commodi magni, repellat rem soluta nihil magnam voluptates? Molestiae
       aliquam saepe aspernatur.</p>
-    <li><a href="index.html#inicio">☝️</a></li>
+    <a href="index.html#inicio">☝️</a>
+
   </article>
   <hr>
   <article id="selectores-avanzados">
@@ -101,13 +110,119 @@
         <li><a href="index.html#inicio">Regresar al Temario</a></li>
 
       </ul>
+      <h3>Selector Universal (*)</h3>
+      <ul class="selector-universal">
+        <li><b>Primavera</b></li>
+        <li><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+      </ul>
     </nav>
-    <li><a href="index.html#inicio">☝️</a></li>
+    <a href="index.html#inicio">☝️</a>
+
+  </article>
+  <hr>
+  <article id="pseudoclases">
+    <h2>Pseudoclases (130)</h2>
+    <form class="form-pseudoclases">
+      <input type="text" name="nombre" placeholder="escribe tu nombre" required><br>
+      <input type="email" name="correo" placeholder="escribe tu correo" required><br>
+      <input type="submit" disabled>
+      <input type="submit">
+    </form>
+    <nav class="menu-pseudoclases">
+      <a href="#seccion1">sección 1</a>
+      <a href="#seccion2">sección 2</a>
+      <a href="#seccion3">sección 3</a>
+      <a href="#seccion4">sección 4</a>
+    </nav>
+    <p class="pseudoclases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quidem maiores placeat
+      amet ullam quos necessitatibus porro totam commodi voluptatum dolores quasi ab corporis odit fugiat labore? Illo,
+      deserunt harum?</p>
+    <ol class="lista-pseudoclases">
+      <li>Mú de Aries</li>
+      <li>Aldebarán de Tauro</li>
+      <li>Saga y Kanon de Géminis</li>
+      <li>Dead Mask de Cáncer</li>
+      <li>Aioria de Leo</li>
+      <li>Shaka de Virgo</li>
+      <li>Dahko de Libra</li>
+      <li>Milo de Escorpión</li>
+      <li>Aiorios de Sagitario</li>
+      <li>Shura de Capricornio</li>
+      <li>Camus de Acuario</li>
+      <li>Afrodita de Piscis</li>
+    </ol>
+    <article class="articulos-pseudoclases">
+      <header>Esto es un header</header>
+      <p>Esto es un p</p>
+      <div>Esto es una div</div>
+      <p>Esto es un p</p>
+      <section>Esto es una section</section>
+      <p>Esto es un p</p>
+      <div>Esto es una div</div>
+      <p>Esto es un p</p>
+      <footer>Esto es un footer</footer>
+    </article>
+    <a href="index.html#inicio">☝️</a>
+
+  </article>
+  <hr>
+  <article id="pseudoelementos">
+    <h2>Pseudoelementos (217)</h2>
+    <p><i>Bandai Myth Cloth Ex</i><span class="saga-geminis">Saga de Géminis</span><span class="saga-precio">500</span>
+    </p>
+    <p class="p-pseudoelementos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, perferendis!
+      Veritatis, fugiat enim? Numquam repellat, blanditiis sint nihil harum veritatis suscipit quo iure illum
+      accusantium voluptates consequuntur dolor. Commodi, culpa!. Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Reiciendis cupiditate maiores voluptatem numquam aliquam sapiente quisquam culpa, quos fugiat ex perferendis
+      nihil commodi dolor esse saepe cumque iste nisi aspernatur!</p>
+    <input class="input-pseudoelementos" type="text" name="nombre" placeholder="escribe tu nombre">
+    <a href="index.html#inicio">☝️</a>
+  </article>
+  <hr>
+  <article id="agrupar-selectores">
+    <h2>Agrupar Selectores (257)</h2>
+    <form action="" class="form-agrupar-selectores">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre">
+      <input type="email" name="correo" placeholder="Escribe tu correo">
+      <textarea name="comentarios" cols="30" rows="10" placeholder="Escribe tus comentarios"></textarea>
+      <input type="submit">
+    </form>
+    <a href="index.html#inicio">☝️</a>
+  </article>
+  <hr>
+  <article id="algoritmo-css">
+    <h2>El Algoritmo de CSS (271)</h2>
+    <ol>
+      <li>La Cáscada</li>
+      <li>La Especificidad</li>
+      <li>La Herencia</li>
+    </ol>
+    <blockquote id="cita-marco" class="cita-marco" style="background-color: rebeccapurple;">
+      Sé tolerante con los demás y estricto contigo mismo - <cite>Marco Aurelio</cite>
+    </blockquote>
+    <a href="index.html#inicio">☝️</a>
+  </article>
+  <hr>
+  <article id="reseteo-normalizador-css">
+    <h2>Reseteo y Normalización de Estilos</h2>
+    <a href="index.html#inicio">☝️</a>
+  </article>
+  <hr>
+  <article id="prefijo-navegadores">
+    <h2>Prefijo de los Navegadores</h2>
+    <ul>
+      <li>Navegadores microsoft <code><b>-ms-</b></code></li>
+      <li>Firefox <code><b>-moz-</b></code></li>
+      <li>Todos los demas navegadores <code><b>-webkit-</b></code></li>
+    </ul>
+    <a href="index.html#inicio">☝️</a>
   </article>
   <hr>
   <article id="">
     <h2></h2>
-    <li><a href="index.html#inicio">☝️</a></li>
+    <a href="index.html#inicio">☝️</a>
   </article>
   <hr>
 </body>
