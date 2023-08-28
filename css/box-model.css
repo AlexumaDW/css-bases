@@ -126,6 +126,140 @@ grid
   visibility: hidden;
 }
 
-/* https: //youtu.be/K3xmRF8ab1o?si=O_FQag1IPSPx01vf&t=22993 */
+/*************************************Overflow********************************************/
 
-/*****************************************************************************************/
+.overflow {
+  background-color: darkblue;
+  width: 200px;
+  height: 100px;
+  overflow: visible;
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/********************************Tamaño de Caja*******************************************/
+
+/* Tamaño de Caja */
+
+.tamanio-caja-content {
+  background-color: aqua;
+  box-sizing: content-box;
+  width: 500px;
+  height: 250px;
+  /* w 500 */
+  /* h 250 */
+  padding: 10px;
+  /* w 500 + 10 + 10 = 520 */
+  /* h 250 + 10 + 10 = 270 */
+  border: thick solid black;
+  /* w 500 + 10 + 10 + 5 + 5 = 530 */
+  /* h 250 + 10 + 10 + 5 + 5  = 280 */
+}
+
+.tamanio-caja-border {
+  background-color: aqua;
+  box-sizing: border-box;
+  width: 500px;
+  height: 250px;
+  /* w 500 */
+  /* h 250 */
+  padding: 10px;
+  /* w 500 */
+  /* h 250 */
+  border: thick solid black;
+  /* w 500 */
+  /* h 250 */
+}
+
+.container-col-3 {
+  background-color: brown;
+  width: 600px;
+  margin-top: 20px;
+  height: 300px;
+}
+
+.container-col-3>* {
+  width: 178px;
+  /* Antes de border box tenias que restar aca o en el conedor */
+  float: left;
+  padding: 10px;
+  border: thin solid red;
+}
+
+/*
+Le damos al html el valor de border-box
+shtml {
+  box-sizing: border-box;
+}
+
+Y heredamos a todos los elementos, todos los elementos generados con los pseudoelementos before y todos los elementos generados con los pseudoelementos after
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+/*****************************Propiedad Float & Clear*************************************/
+
+/* float */
+
+.container-floats {
+  background-color: cornflowerblue;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/******************************Colapso de Márgenes Verticales*****************************/
+
+.margin-collapse {
+  background-color: skyblue;
+}
+
+/* Solo trabajar 1  tipo de margen o bottom o top nunca los 2*/
+
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margin-collapse span {
+  display: inline-block;
+  margin: 0 25px;
+  border: thin solid black;
+}
+
+/************************************Centrado De Cajas************************************/
+
+.sitio-web {
+  border: thin solid black;
+  background-color: thistle;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Es mala practica porque resetea el top y bottom */
+  margin: 0 auto;
+}
+
+
+
+
+
+
+/************************************Centrado De Cajas************************************/
