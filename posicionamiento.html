@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posicionamiento en HTML</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/posicionamiento.css">
+</head>
+
+<body>
+  <h1>Posicionamiento en HTML</h1>
+  <article id="temario">
+    <h2>Temario del curso:</h2>
+    <ul>
+      <li><a href="index.html#inicio">☝️</a></li>
+      <li><a href="posicionamiento.html#z-index">Z-index</a></li>
+      <li><a href="posicionamiento.html#static">Estática</a></li>
+      <li><a href="posicionamiento.html#relative">Relativa</a></li>
+      <li><a href="posicionamiento.html#absolute">Absoluta</a></li>
+      <li><a href="posicionamiento.html#fixed">Fijo</a></li>
+      <li><a href="posicionamiento.html#sticky">Pegajoso</a></li>
+      <li><a href="posicionamiento.html#z-index">Z-index</a></li>
+    </ul>
+  </article>
+  <article>
+    <h2>Estática (34)</h2>
+    <div class="static">Caja Estática</div>
+    <a href="posicionamiento.html#temario">☝️</a>
+  </article>
+  <hr>
+  <article id="relative">
+    <h2>Relativa (45)</h2>
+    <div class="relative">Caja Relativa</div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <a href="posicionamiento.html#temario">☝️</a>
+  </article>
+  <hr>
+  <article id="absolute">
+    <h2>Absoluta (66)</h2>
+    <section class="relative-parent">
+      <div class="absolute-child">Caja absoluta con ancestro Relativo</div>
+    </section>
+    <div class="absolute">Caja Absoluta</div>
+    <a href="posicionamiento.html#temario">☝️</a>
+  </article>
+  <br><br><br><br><br><br><br><br><br><br>
+  <hr>
+  <article id="fixed">
+    <h2>Fijo (100)</h2>
+    <div class="fixed">Caja Fija</div>
+    <a href="posicionamiento.html#temario">☝️</a>
+  </article>
+  <br><br><br><br><br><br><br><br><br><br>
+  <hr>
+  <h2 id="sticky">Pegajoso (115)</h2>
+  <div class="sticky">Caja Pegajosa</div>
+  <section class="sticky-parent">
+    <div class="sticky-child">Caja sticky con ancestro</div>
+  </section>
+  <a href="posicionamiento.html#temario">☝️</a>
+  <hr>
+  <article id="z-index">
+    <h2>Z-index (139)</h2>
+    <div class="z-index-1">Probando Z-index Caja-1</div>
+    <div class="z-index-2">Probando Z-index Caja-2</div>
+    <a href="posicionamiento.html#temario">☝️</a>
+  </article>
+  <br><br><br><br><br><br><br><br><br><br>
+  <hr>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <hr>
+
+</body>
+
+</html>
