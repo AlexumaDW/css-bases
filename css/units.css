@@ -10,10 +10,122 @@ em, rem, ex, ch - Al tamaño de la fuente.
   rem - Basada en la anchura de la "m" de la fuente del elemento HTML.
   ex - Basada en la altura de la "X" de la fuente del elemento.
   ch - Basada en la anchura de la "O" de la fuente del elemento.
-  % - al tamaño del contenedor.
+  % - Al tamaño del contenedor.
   vw, vh, vmin, vmax - Al tamaño del viewport.
   vw - Ancho del viewport van del 1 - 100.
   vh - Alto del viewport van del 1 - 100.
   vmin - Entre el "vw" y el "vh" toma el que tenga menor valor.
   vmax - Entre el "vw" y el "vh" toma el que tenga mayor valor.
 */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.pixels {
+  background-color: cadetblue;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border: thick solid rebeccapurple;
+  font-size: 16px;
+}
+
+.ems {
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1em .5em;
+  border: thick solid rebeccapurple;
+}
+
+.em-child {
+  background-color: salmon;
+  border: thick solid navajowhite;
+  font-size: 2em;
+  margin: .5em;
+  padding: 1em;
+}
+
+.rems {
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1rem .5rem;
+  border: thick solid rebeccapurple;
+}
+
+.rem-child {
+  background-color: salmon;
+  border: thick solid navajowhite;
+  font-size: 2rem;
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.exs {
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1ex .5ex;
+  border: thick solid rebeccapurple;
+}
+
+.ex-child {
+  background-color: salmon;
+  border: thick solid navajowhite;
+  font-size: 2ex;
+  margin: .5ex;
+  padding: 1ex;
+}
+
+.chs {
+  background-color: cadetblue;
+  /* border: thick solid rebeccapurple; */
+  width: 10ch;
+}
+
+.percentages {
+  background-color: darkkhaki;
+  width: 80%;
+  font-size: 100%;
+  margin: 5% 10%;
+  padding: 5%;
+}
+
+.height-parent {
+  background-color: brown;
+  height: 500px;
+  width: 500px;
+  margin: 10%;
+}
+
+.height-child {
+  background-color: coral;
+  width: 50%;
+  height: 50%;
+}
+
+.viewport {
+  background-color: darkcyan;
+  width: 50vw;
+  height: 50vh;
+  /* Recuerda que la etiqueta body tiene margenes por el navegador y recuerda que las barras del scroll del navegador tambien forman partes del vw*/
+  width: 100vw;
+  width: 100%;
+  font-size: 5vw;
+  padding: 2vh 2vw;
+}
+
+.vmin,
+.vmax {
+  background-color: darkorange;
+  border: thick solid black;
+  margin: 10px;
+  width: 50vmax;
+  height: 50vmin;
+}
