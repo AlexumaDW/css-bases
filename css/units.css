@@ -1,0 +1,19 @@
+/* 
+Unidades de medida:
+1) Absolutas (Su valor no cambia, son unidades del mundo real)
+pc, cm, mm, in, Q
+pt(1/72in)
+px(1/96in)
+2) Relativas (Su valor es relativo a un contexto)
+em, rem, ex, ch - Al tamaño de la fuente.
+  em - Basada en la anchura de la "m" de la fuente del elemento.
+  rem - Basada en la anchura de la "m" de la fuente del elemento HTML.
+  ex - Basada en la altura de la "X" de la fuente del elemento.
+  ch - Basada en la anchura de la "O" de la fuente del elemento.
+  % - al tamaño del contenedor.
+  vw, vh, vmin, vmax - Al tamaño del viewport.
+  vw - Ancho del viewport van del 1 - 100.
+  vh - Alto del viewport van del 1 - 100.
+  vmin - Entre el "vw" y el "vh" toma el que tenga menor valor.
+  vmax - Entre el "vw" y el "vh" toma el que tenga mayor valor.
+*/
