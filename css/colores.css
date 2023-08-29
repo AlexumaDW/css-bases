@@ -1,1 +1,80 @@
-/*  https: //youtu.be/p_lT7AgpEMU?si=cFbaGNdbc8A99W6J&t=539 */
+.color-by-name {
+  background-color: coral;
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+}
+
+/* Sistema Hexadecimal
+01234567890ABCDEF
+
+RedGreenBlue (Medios Digitales) VS  CyanMagentaYellowKey (Medios Impresos)
+
+Colores en HEX van a ser colores de 6 dígitos
+
+#FF6600
+*/
+
+.color-hex {
+  background-color: #ff6600;
+  /* si las parejas son iguales se puede simplificar */
+  background-color: #f605;
+  background-color: #000;
+  color: #12ac78;
+  border: thick solid #ffffff;
+  border: thick solid #ff0000;
+  border: thick solid #00ff00;
+  border: thick solid #0000ff;
+  border: thick solid #00000050;
+}
+
+
+/* 
+Sistema RGB
+  Acepta 8 bits por canal
+  BIT (0-1) 2 elevado a la potencia 8 = 256
+  Por cada canal de color tenemos valores que van del 0 - 255
+*/
+.color-rgb {
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 255, 0);
+  background-color: rgb(0, 0, 255);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(55, 124, 65, .5);
+  color: rgb(255, 102, 0);
+  border: thick solid rgb(128, 100, 7);
+}
+
+/* 
+Sistema HSL
+HueSaturationLightness (Tono-Saturación-Luminosidad)
+
+El primer valor es Hue (Círculo Cromático)
+0° -> Red
+60° -> Yellow
+120° -> Green
+180° -> Cyan
+240° -> Blue
+300° -> Magenta
+
+El segundo valor es Saturation (Intensidad del Color)
+0% -> Escala de grises
+100% -> Color Puro
+
+El tercer valor es Lightness (Luminosidad del Color)
+0% -> Negro
+50% -> Color Puro
+100% -> Blanco
+*/
+
+.color-hsl {
+  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(120, 100%, 50%);
+  background-color: hsl(240, 100%, 50%);
+  background-color: hsl(30, 100%, 50%);
+  background-color: hsl(210, 75%, 65%);
+  background-color: hsla(210, 75%, 65%, .5);
+  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  border: thick solid greenyellow;
+}
