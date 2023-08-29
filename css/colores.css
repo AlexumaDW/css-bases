@@ -78,3 +78,29 @@ El tercer valor es Lightness (Luminosidad del Color)
   color: hsl(0, 0%, 0%);
   border: thick solid greenyellow;
 }
+
+
+/* 
+Valor transparent: Color transparente es igual a aplicar rgba(0,0,0,0) 
+Valor currentCOlor: Hereda el valor por defecto o asignado de la propiedad color, del ancestro que tenga definida esta propiedad, busca del ancestro más cercano al más lejano
+*/
+.color-transparent-current {
+  background-color: darkmagenta;
+  background-color: currentColor;
+  background-color: transparent;
+  border: thick solid currentColor;
+  /* color: orangered; */
+  /* color: white; */
+}
+
+/*  */
+
+.opacity {
+  background-color: orchid;
+  color: navy;
+  border: thick solid black;
+  opacity: 1;
+  opacity: 0;
+  opacity: .5;
+
+}
