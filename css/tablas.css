@@ -11,3 +11,21 @@ html {
 body {
   margin: 0;
 }
+
+.table {
+  font-size: 3rem;
+  border-collapse: collapse;
+  /* DEFECTO */
+  border-collapse: separate;
+  text-align: center;
+  /* DEFECTO */
+  empty-cells: show;
+  empty-cells: hide;
+}
+
+.table,
+th,
+td {
+  border: medium solid black;
+  border-spacing: 10px;
+}
