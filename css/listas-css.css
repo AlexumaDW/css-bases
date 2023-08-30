@@ -11,3 +11,34 @@ html {
 body {
   margin: 0;
 }
+
+.list li {
+  /* DEFAULT */
+  list-style-type: disc;
+  list-style-type: square;
+  list-style-type: circle;
+  list-style-type: none;
+  list-style-type: none;
+}
+
+.list li::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../assets/favicon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.list-2 li {
+  /* DEFECTO */
+  list-style-position: outside;
+  list-style-position: inside;
+  background-color: yellowgreen;
+}
+
+.list-3 li {
+  list-style: lower-latin outside;
+  background-color: red;
+}
