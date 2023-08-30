@@ -11,3 +11,23 @@ html {
 body {
   margin: 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: medium solid black;
+  width: 400px;
+  height: 400px;
+}
+
+.card img {
+  height: 300px;
+  /* DEFAULT */
+  object-fit: fill;
+  object-fit: contain;
+  object-fit: cover;
+  object-position: top left;
+}
