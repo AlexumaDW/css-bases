@@ -7,7 +7,12 @@
   <title>Estilos de Fuentes y Textos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/fuentes-textos.css">
 </head>
@@ -28,6 +33,43 @@
   <p class="m-plus-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem voluptate est repellat
     repellendus recusandae tenetur saepe similique iste suscipit explicabo, excepturi quia nisi? Sint repellat
     voluptatibus odio maxime modi a.</p>
+  <h2>Estilos para Textos</h2>
+  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quos doloribus reprehenderit nesciunt
+    sunt, nemo earum aut doloremque atque adipisci est exercitationem quisquam quibusdam aliquam! Minus libero sint
+    laboriosam amet.</p>
+  <p class="text-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quos doloribus reprehenderit
+    nesciunt
+    sunt, nemo earum aut doloremque atque adipisci est exercitationem quisquam quibusdam aliquam! Minus libero sint
+    laboriosam amet.</p>
+  <p class="white-space">
+    const para = document.querySelector("p");
+
+    para.addEventListener("click", updateName);
+
+    function updateName() {
+    let name = prompt("Enter a new name");
+    para.textContent = "Player 1: " + name;
+    }
+  </p>
+  <p class="word-spacing">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque voluptatem cum non illum esse
+    ullam alias repellendus aperiam corrupti veniam incidunt, vel repellat necessitatibus eligendi fugiat sunt
+    blanditiis culpa libero.</p>
+  <h2>Tipográfias de Íconos Vectoriales</h2>
+  <h3>Material Íconos (Google)</h3>
+  <span class="material-symbols-outlined">
+    login
+  </span>
+  <span class="material-symbols-outlined">
+    face
+  </span>
+  <span class="material-symbols-outlined">
+    favorite
+  </span>
+  <h3>Bootstrap Íconos</h3>
+  <i class="bi bi-0-square-fill"></i>
+  <i class="bi bi-twitter"></i>
+  <h3>Font Awesome</h3>
+  <i class="fa-solid fa-pen"></i>
 </body>
 
 </html>
