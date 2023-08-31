@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 *,
@@ -8,6 +9,67 @@ html {
   box-sizing: inherit;
 }
 
+
 body {
   margin: 0;
+}
+
+.contact-form {
+  --form-text-color: #001ba4;
+  --form-success-colo: #4caf50;
+  --form-error-color: #f44336;
+  --form-bg-color: #eee;
+  --form-border-color: #222;
+
+  background-color: var(--form-bg-color);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: thin solid black;
+  padding: 2rem;
+  caret-color: var(--form-text-color);
+}
+
+.contact-form input[type="submit"] {
+  border-width: 0;
+}
+
+.contact-form>* {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  color: var(--form-text-color);
+  border-color: var(--form-border-color);
+  border-width: thin;
+}
+
+.contact-form>*[required]:invalid {
+  border-color: var(--form-error-color);
+}
+
+.contact-form>*[required]:valid {
+  border-color: var(--form-success-colo);
+}
+
+.contact-form input[type="submit"] {
+  margin-bottom: 0;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--form-text-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-form input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.contact-form textarea {
+  resize: none;
 }
