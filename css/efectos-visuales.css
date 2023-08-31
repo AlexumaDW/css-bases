@@ -11,3 +11,115 @@ html {
 body {
   margin: 0;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: thick solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.box-shadow {
+  /* box-shadow: mov-x mox-y blur-radial spread-blur color inset/outset; */
+  /* La sombra hereda el color del color de texto */
+  color: navy;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  box-shadow: 1rem 1rem 1rem 1rem;
+  box-shadow: -1rem -1rem 1rem 1rem;
+  box-shadow: 1rem 1rem 1rem 1rem #00000075;
+  box-shadow: 1rem 1rem 1rem 1rem #00000075 inset;
+  box-shadow: 0 1rem 1rem .1rem #00000075;
+  text-shadow: -.5rem -.5rem .2rem hotpink;
+}
+
+.box-shadows-multiple {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  box-shadow: -1rem -1rem 1rem 1rem,
+    .5rem .5rem 1rem 1rem hotpink,
+    .5rem .5rem 1rem 1rem red inset;
+  text-shadow: .5rem .5rem .2rem hotpink, -.5rem -.5rem .2rem red;
+}
+
+.drop-shadow {
+  width: 700px;
+  height: auto;
+}
+
+.drop-shadow img {
+  max-width: 100%;
+  filter: drop-shadow(1rem 1rem 1rem red);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.linear-gradient {
+  background-image: linear-gradient(red, green);
+  background-image: linear-gradient(red, green, blue);
+  background-image: linear-gradient(0deg, red, green, blue);
+  background-image: linear-gradient(90deg, red, green, blue);
+  background-image: linear-gradient(180deg, red, green, blue);
+  background-image: linear-gradient(270deg, red, green, blue);
+  background-image: linear-gradient(to top, red, green, blue);
+  background-image: linear-gradient(to right, red, green, blue);
+  background-image: linear-gradient(to bottom, red, green, blue);
+  background-image: linear-gradient(to left, red, green, blue);
+  background-image: linear-gradient(to left top, red, green, blue);
+  background-image: linear-gradient(to right bottom, red, green, rgb(0, 179, 255));
+  background-image: linear-gradient(to right bottom, red 30%, green 50%, blue 90%);
+  background-image: linear-gradient(0deg, rgb(0, 255, 255) 33%, white 34% 66%, rgb(0, 255, 255) 67% 100%);
+}
+
+.radial-gradient {
+  background-image: radial-gradient(cyan, magenta);
+  background-image: radial-gradient(4rem, cyan 30%, magenta 30% 80%, yellow 80%);
+  background-image: radial-gradient(circle 4rem, cyan 30%, magenta 60%, yellow 90%);
+  background-image: radial-gradient(ellipse 4rem 8rem, cyan 30%, magenta 60%, yellow 90%);
+  background-image: radial-gradient(circle 4rem at top, cyan 30%, magenta 60%, yellow 90%);
+  background-image: radial-gradient(circle 4rem at bottom, cyan 30%, magenta 60%, yellow 90%);
+  background-image: radial-gradient(circle 4rem at bottom left, cyan 30%, magenta 60%, yellow 90%);
+  background-image: radial-gradient(circle 4rem, red 60%, white 60%);
+}
+
+.conic-gradient {
+  background-image: conic-gradient(red, green);
+  background-image: conic-gradient(red, green, blue);
+  background-image: conic-gradient(red 10%, green 40% 60%, blue 90%);
+  background-image: conic-gradient(from 90deg, red 10%, green 40% 60%, blue 90%);
+  background-image: conic-gradient(from 180deg, red 10%, green 40% 60%, blue 90%);
+  background-image: conic-gradient(from 270deg, red 10%, green 40% 60%, blue 90%);
+  background-image: conic-gradient(from 90deg, red 0deg 120deg, white 120deg 240deg, blue 240deg);
+}
+
+.repeat-gradient-linear {
+  background-image: repeating-linear-gradient(red 0 10px, green 10px 20px, blue 20px 30px);
+  background-image: repeating-linear-gradient(90deg, red 0 10px, green 10px 20px, blue 20px 30px);
+  background-image: repeating-linear-gradient(45deg, red 0 10px, green 10px 20px, blue 20px 30px);
+}
+
+.repeat-gradient-radial {
+  background-image: repeating-radial-gradient(circle 4rem, cyan 0 10px, magenta 10px 20px, yellow 20px 30px);
+}
+
+.repeat-gradient-conic {
+  background-image: repeating-conic-gradient(red 0% 8%, yellow 8% 16%, black 16% 24%);
+}
+
+.chart-gradient {
+  background-image: conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+
+.donut-gradient {
+  background-image: radial-gradient(white 31%, black 31% 34%, transparent 34%), conic-gradient(cyan 0% 50%,
+      magenta 50% 80%,
+      yellow 80%);
+  border-radius: 50%;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
