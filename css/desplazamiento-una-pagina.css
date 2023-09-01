@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -9,11 +10,48 @@ html {
   box-sizing: inherit;
 }
 
-body {
+body,
+h1,
+h2 {
   margin: 0;
 }
 
 img {
-  width: 100%;
+  width: 50%;
   height: auto;
+}
+
+[id] {
+  scroll-margin-top: 10ex;
+}
+
+.header {
+  height: 10ex;
+  position: sticky;
+  top: 0;
+  padding: .5rem;
+  text-align: center;
+  background-color: #505050;
+  color: #fff;
+}
+
+.header a {
+  margin: 0 1rem;
+  color: cyan;
+}
+
+.header a:hover {
+  color: pink;
+}
+
+.slide {
+  width: 100%;
+  min-height: 100vh;
+  color: #8b8a8a;
+  background-color: rgb(42, 42, 147);
+  padding: 2rem;
+}
+
+.slide:nth-child(even) {
+  background-color: rgb(201, 84, 84);
 }
